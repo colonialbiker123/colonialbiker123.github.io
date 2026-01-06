@@ -18,16 +18,22 @@ defaultContentLanguage = "en"
   toc = true
 
 [[params.social]]
+  name = "Email"
+  icon = "fa fa-envelope"
+  weight = 3
+  url = "mailto:colonialbiker123@gmail.com"
+
+[[params.social]]
   name = "GitHub"
   icon = "fa fa-github"
   weight = 1
-  url = "https://github.com/<your-github-username>/"
+  url = "https://github.com/colonialbiker123/"
 
 [[params.social]]
   name = "LinkedIn"
   icon = "fa fa-linkedin"
   weight = 2
-  url = "https://linkedin.com/in/your-profile/"
+  url = "https://linkedin.com/in/sumukh-kesarla/"
 
 [languages.en]
   languageName = "English"
