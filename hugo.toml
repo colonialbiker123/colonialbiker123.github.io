@@ -1,0 +1,55 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Sumukh Kesarla'
+theme = "hugo-coder"
+defaultContentLanguage = "en"
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  author = "Sumukh Kesarla"
+  description = "Cyber Security | Research"
+  keywords = "blog,security"
+  info = ["Cybersecurity Engineer", "Research"]
+  avatarURL = "images/avatar.jpg"
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+  toc = true
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github"
+  weight = 1
+  url = "https://github.com/<your-github-username>/"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin"
+  weight = 2
+  url = "https://linkedin.com/in/your-profile/"
+
+[languages.en]
+  languageName = "English"
+  weight = 1
+
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url = "posts/"
+
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
+
+[[menu.main]]
+  name = "Article"
+  weight = 2
+  url = "article/"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    ordered = true
+    endLevel = 4
