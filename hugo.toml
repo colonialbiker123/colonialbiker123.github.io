@@ -49,6 +49,11 @@ defaultContentLanguage = "en"
   weight = 2
   url = "article/"
 
+[[menu.main]]
+  name = "Posts"
+  weight = 2
+  url = "posts/"
+
 [markup]
   [markup.tableOfContents]
     startLevel = 2
