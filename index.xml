@@ -1,4 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sumukh Kesarla</title><link>https://colonialbiker123.github.io/</link><description>Recent content on Sumukh Kesarla</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 06 Jan 2026 20:39:14 +0530</lastBuildDate><atom:link href="https://colonialbiker123.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>LLM Security</title><link>https://colonialbiker123.github.io/article/llm-security/</link><pubDate>Tue, 06 Jan 2026 20:39:14 +0530</pubDate><guid>https://colonialbiker123.github.io/article/llm-security/</guid><description>&lt;h1 id="introduction"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sumukh Kesarla</title><link>https://colonialbiker123.github.io/</link><description>Recent content on Sumukh Kesarla</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 09 Apr 2026 21:07:34 +0530</lastBuildDate><atom:link href="https://colonialbiker123.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 1)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day1/</link><pubDate>Thu, 09 Apr 2026 21:07:34 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day1/</guid><description>&lt;h1 id="google-cloud-fundamentals-core-infrastructure-day-1"&gt;
+ Google Cloud Fundamentals: Core Infrastructure (Day 1)
+ &lt;a class="heading-link" href="#google-cloud-fundamentals-core-infrastructure-day-1"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="introduction"&gt;
+ Introduction
+ &lt;a class="heading-link" href="#introduction"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud offerings can be broadly categorised as compute, storage, big data, machine learning, and application services for web, mobile, analytics, and back-end solutions.&lt;/li&gt;
+&lt;li&gt;5 important traits:
+&lt;ul&gt;
+&lt;li&gt;Customers get computing resources that are on-demand and self-service.&lt;/li&gt;
+&lt;li&gt;Customers get access to those resources over the internet, from anywhere they have a connection.&lt;/li&gt;
+&lt;li&gt;the cloud provider has a big pool of those resources and allocates them to users out of that pool.&lt;/li&gt;
+&lt;li&gt;the resources are elastic–which means they’re flexible, so customers can be.&lt;/li&gt;
+&lt;li&gt;customers pay only for what they use, or reserve as they go.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Some history:
+&lt;ul&gt;
+&lt;li&gt;a first wave known as colocation. Colocation gave users the financial efficiency of renting physical space, instead of investing in data center real estate.&lt;/li&gt;
+&lt;li&gt;Second Wave: The components of virtualized data centers match the physical building blocks of hosted computing—servers, CPUs, disks, load balancers, and so on—but now they’re virtual devices. it also remains a user-controlled and user-configured environment.&lt;/li&gt;
+&lt;li&gt;Third Wave: Google switched to a container-based architecture— a fully automated, elastic third-wave cloud that consists of a combination of automated services and scalable data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Compute Engine is an example of a Google Cloud IaaS service.&lt;/li&gt;
+&lt;li&gt;App Engine is an example of a Google Cloud PaaS service.&lt;/li&gt;
+&lt;li&gt;SaaS provides the entire application stack, delivering an entire cloud-based application that customers can access and use.&lt;/li&gt;
+&lt;li&gt;In the IaaS model, customers pay for the resources they allocate ahead of time; in the PaaS model, customers pay for the resources they actually use.&lt;/li&gt;
+&lt;li&gt;As cloud computing has evolved, the momentum has shifted toward managed infrastructure and managed services.&lt;/li&gt;
+&lt;li&gt;Serverless allows developers to concentrate on their code, rather than on server configuration, by eliminating the need for any infrastructure management.&lt;/li&gt;
+&lt;li&gt;Cloud Run: allows customers to deploy their containerized microservices based application in a fully-managed environment.&lt;/li&gt;
+&lt;li&gt;Cloud Run functions: manages event-driven code as a pay-as-you-go service.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="the-google-cloud-network"&gt;
+ The Google Cloud Network
+ &lt;a class="heading-link" href="#the-google-cloud-network"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud’s infrastructure is based in seven major geographic locations: North America, South America, Europe, Africa, the Middle East, Asia, and Australia.&lt;/li&gt;
+&lt;li&gt;Regions represent independent geographic areas and are composed of zones. For example, London, or europe-west2, is a region that currently comprises three different zones. A zone is an area where Google Cloud resources are deployed.&lt;/li&gt;
+&lt;li&gt;Spanner multi-region configurations allow you to replicate the database&amp;rsquo;s data not just in multiple zones, but in multiple zones across multiple regions, as defined by the instance configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="security"&gt;
+ Security
+ &lt;a class="heading-link" href="#security"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Hardware Infrastructure Layer:
+&lt;ul&gt;
+&lt;li&gt;hardware design and provenance: Google also designs custom chips, including a hardware security chip that&amp;rsquo;s currently being deployed on both servers and peripherals.&lt;/li&gt;
+&lt;li&gt;secure boot stack: to ensure that they are booting the correct software stack, such as cryptographic signatures over the BIOS, bootloader, kernel, and base operating system image.&lt;/li&gt;
+&lt;li&gt;premises security: limited to only a very small number of Google employees.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Service deployment layer
+&lt;ul&gt;
+&lt;li&gt;encryption of inter-service communication: Google’s infrastructure provides cryptographic privacy and integrity for remote procedure call (“RPC”) data on the network. Google has started to deploy hardware cryptographic accelerators that will allow it to extend this default encryption to all infrastructure RPC traffic inside Google data centers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;User Identity Layer
+&lt;ul&gt;
+&lt;li&gt;Google’s central identity service, which usually manifests to end users as the Google login page, goes beyond asking for a simple username and password. Users can also employ secondary factors when signing in, including devices based on the Universal 2nd Factor (U2F) open standard.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Storage services layer
+&lt;ul&gt;
+&lt;li&gt;encryption at rest security feature: encryption using centrally managed keys is applied. Google also enables hardware encryption support in hard drives and SSDs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internet communication layer:
+&lt;ul&gt;
+&lt;li&gt;Google services that are being made available on the internet, register themselves with an infrastructure service called the Google Front End, which ensures that all TLS connections are ended using a public-private key pair and an X.509 certificate from a Certified Authority (CA), as well as following best practices such as supporting perfect forward secrecy.&lt;/li&gt;
+&lt;li&gt;Denial of Service (“DoS”) protection: multi-tier, multi-layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Operational security layer
+&lt;ul&gt;
+&lt;li&gt;intrusion detection: Rules and machine intelligence give Google’s operational security teams warnings of possible incidents. Red Team exercises to measure and improve the effectiveness of its detection and response mechanisms.&lt;/li&gt;
+&lt;li&gt;Reducing insider risk: Google aggressively limits and actively monitors the activities of employees who have been granted administrative access to the infrastructure.&lt;/li&gt;
+&lt;li&gt;employee U2F use: employee accounts require use of U2F-compatible Security Keys.&lt;/li&gt;
+&lt;li&gt;stringent software development practices: Google employs central source control and requires two-party review of new code. Google runs a Vulnerability Rewards Program where we pay anyone who is able to discover and inform us of bugs in our infrastructure or applications. Google also provides its developers libraries that prevent them from introducing certain classes of security bugs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="open-source-ecosystems"&gt;
+ Open Source Ecosystems:
+ &lt;a class="heading-link" href="#open-source-ecosystems"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;For example, TensorFlow, an open source software library for machine learning developed inside Google, is at the heart of a strong open source ecosystem.&lt;/li&gt;
+&lt;li&gt;Kubernetes and Google Kubernetes Engine give customers the ability to mix and match microservices running across different clouds, while Google Cloud Observability lets customers monitor workloads across multiple cloud providers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="pricing-and-billing"&gt;
+ Pricing and Billing:
+ &lt;a class="heading-link" href="#pricing-and-billing"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;How can I make sure I don’t accidentally run up a big Google Cloud bill?
+&lt;ul&gt;
+&lt;li&gt;You can define budgets at the billing account level or at the project level.&lt;/li&gt;
+&lt;li&gt;To be notified when costs approach your budget limit, you can create an alert. Alerts are generally set at 50%, 90% and 100%, but can also be customized.&lt;/li&gt;
+&lt;li&gt;Reports is a visual tool in the Google Cloud Console that allows you to monitor expenditure based on a project or services.&lt;/li&gt;
+&lt;li&gt;Google Cloud also implements quotas, which are designed to prevent the over-consumption of resources because of an error or a malicious attack, protecting both account owners and the Google Cloud community as a whole.&lt;/li&gt;
+&lt;li&gt;Rate quotas reset after a specific time. For example, by default, the GKE service implements a quota of 3,000 calls to its API from each Google Cloud project every 100 seconds.&lt;/li&gt;
+&lt;li&gt;Allocation quotas govern the number of resources you can have in your projects. For example, by default, each Google Cloud project has a quota allowing it no more than 15 Virtual Private Cloud networks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>LLM Security</title><link>https://colonialbiker123.github.io/article/llm-security/</link><pubDate>Tue, 06 Jan 2026 20:39:14 +0530</pubDate><guid>https://colonialbiker123.github.io/article/llm-security/</guid><description>&lt;h1 id="introduction"&gt;
  Introduction
  &lt;a class="heading-link" href="#introduction"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
