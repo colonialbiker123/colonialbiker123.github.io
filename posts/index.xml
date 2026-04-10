@@ -1,4 +1,133 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Sumukh Kesarla</title><link>https://colonialbiker123.github.io/posts/</link><description>Recent content in Posts on Sumukh Kesarla</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 09 Apr 2026 21:07:34 +0530</lastBuildDate><atom:link href="https://colonialbiker123.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 1)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day1/</link><pubDate>Thu, 09 Apr 2026 21:07:34 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day1/</guid><description>&lt;h1 id="google-cloud-fundamentals-core-infrastructure-day-1"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Sumukh Kesarla</title><link>https://colonialbiker123.github.io/posts/</link><description>Recent content in Posts on Sumukh Kesarla</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2026 21:01:23 +0530</lastBuildDate><atom:link href="https://colonialbiker123.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 2)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day2/</link><pubDate>Fri, 10 Apr 2026 21:01:23 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day2/</guid><description>&lt;h1 id="google-cloud-fundamentals-core-infrasrucutre-day-2"&gt;
+ Google Cloud Fundamentals: Core Infrasrucutre (Day 2)
+ &lt;a class="heading-link" href="#google-cloud-fundamentals-core-infrasrucutre-day-2"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h1 id="google-cloud-resource-hierarchy"&gt;
+ Google Cloud Resource Hierarchy
+ &lt;a class="heading-link" href="#google-cloud-resource-hierarchy"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud’s resource hierarchy contains four levels, and starting from the bottom up they are: resources, projects, folders, and an organization node.&lt;/li&gt;
+&lt;li&gt;Resources:
+&lt;ul&gt;
+&lt;li&gt;Resource represent virtual machines, Cloud Storage buckets, tables in BigQuery, or anything else in Google Cloud.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Projects:
+&lt;ul&gt;
+&lt;li&gt;Resources are organized into projects. each resource belongs to exactly one project&lt;/li&gt;
+&lt;li&gt;Projects are the basis for enabling and using Google Cloud services, like managing APIs, enabling billing, adding and removing collaborators, and enabling other Google services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Folders:
+&lt;ul&gt;
+&lt;li&gt;Projects can be organized into folders/ subfolders. A folder can contain projects, other folders, or a combination of both. Folders allow you to group these resources on a per-department basis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Organization Node:
+&lt;ul&gt;
+&lt;li&gt;And then at the top level is an organization node, which encompasses all the projects, folders, and resources in your organization. you can designate an organization policy administrator so that only people with privilege can change policies. You can also assign a project creator role, which is a great way to control who can create projects and, therefore, who can spend money.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Policies can be defined at the project, folder, and organization node levels.&lt;/li&gt;
+&lt;li&gt;Policies are also inherited downward.&lt;/li&gt;
+&lt;li&gt;Each Google Cloud project has three identifying attributes: a project ID, a project name, and a project number.&lt;/li&gt;
+&lt;li&gt;Google Cloud’s Resource Manager tool is designed to programmatically help you manage projects. It’s an API that can gather a list of all the projects associated with an account, create new projects, update existing projects, and delete projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="identity-and-access-management"&gt;
+ Identity and Access Management
+ &lt;a class="heading-link" href="#identity-and-access-management"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Principal:
+&lt;ul&gt;
+&lt;li&gt;The “who” part of an IAM policy can be a Google account, a Google group, a service account, or a Cloud Identity domain. A “who” is also called a “principal.”&lt;/li&gt;
+&lt;li&gt;Each principal has its own identifier, usually an email address.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Role:
+&lt;ul&gt;
+&lt;li&gt;An IAM role is a collection of permissions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;You can define deny rules that prevent certain principals from using certain permissions, regardless of the roles they&amp;rsquo;re granted.&lt;/li&gt;
+&lt;li&gt;There are three kinds of roles in IAM: basic, predefined, and custom.
+&lt;ul&gt;
+&lt;li&gt;Basic: quite broad in scope. Basic roles include owner, editor, viewer, and billing administrator.&lt;/li&gt;
+&lt;li&gt;predefined: Specific Google Cloud services offer sets of predefined roles, and they even define where those roles can be applied.&lt;/li&gt;
+&lt;li&gt;Custom: if you need to assign a role that has even more specific permissions. Many companies use a “least-privilege” model in which each person in your organization is given the minimal amount of privilege needed to do their job. Custom roles will allow you to define those exact permissions. custom roles can only be applied to either the project level or organization level.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="service-accounts"&gt;
+ Service Accounts
+ &lt;a class="heading-link" href="#service-accounts"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Service accounts allow you to assign specific permissions to a virtual machine, so it can interact with other cloud services without human intervention.&lt;/li&gt;
+&lt;li&gt;Service accounts are named with an email address, but instead of passwords they use cryptographic keys to access resources.&lt;/li&gt;
+&lt;li&gt;Service accounts do need to be managed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="cloud-identity"&gt;
+ Cloud Identity
+ &lt;a class="heading-link" href="#cloud-identity"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;When new Google Cloud customers start using the platform, it’s common to log in to the Google Cloud Console with a Gmail account and then use Google Groups to collaborate with teammates who are in similar roles.&lt;/li&gt;
+&lt;li&gt;With a tool called Cloud Identity, organizations can define policies and manage their users and groups using the Google Admin Console.&lt;/li&gt;
+&lt;li&gt;Admins can log in and manage Google Cloud resources using the same usernames and passwords they already use in existing Active Directory or LDAP systems.&lt;/li&gt;
+&lt;li&gt;Using Cloud Identity also means that when someone leaves an organization, an administrator can use the Google Admin Console to disable their account and remove them from groups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="interacting-with-google-cloud"&gt;
+ Interacting with Google Cloud
+ &lt;a class="heading-link" href="#interacting-with-google-cloud"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud console:
+&lt;ul&gt;
+&lt;li&gt;Google Cloud’s graphical user interface, or GUI, that helps you deploy, scale, and diagnose production issues in a simple web-based interface.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google Cloud SDK and Cloud Shell:
+&lt;ul&gt;
+&lt;li&gt;These include the Google Cloud CLI, which provides the main command-line interface for Google Cloud products and services, and bq, a command-line tool for BigQuery.&lt;/li&gt;
+&lt;li&gt;When installed, all of the tools within the Google Cloud SDK are located under the bin directory.&lt;/li&gt;
+&lt;li&gt;Cloud Shell provides command-line access to cloud resources directly from a browser.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;APIs
+&lt;ul&gt;
+&lt;li&gt;The Google Cloud console includes a tool called the Google APIs Explorer that shows which APIs are available, and in which versions.&lt;/li&gt;
+&lt;li&gt;Google provides Cloud Client libraries and Google API Client libraries in many popular languages&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Google Cloud app
+&lt;ul&gt;
+&lt;li&gt;used to start, stop, and use SSH to connect to Compute Engine instances and see logs from each instance. It also lets you stop and start Cloud SQL instances.&lt;/li&gt;
+&lt;li&gt;The Google Cloud app provides up-to-date billing information for your projects and billing alerts for projects that are going over budget.&lt;/li&gt;
+&lt;li&gt;You can set up customizable graphs showing key metrics such as CPU usage, network usage, requests per second, and server errors.&lt;/li&gt;
+&lt;li&gt;The app also offers alerts and incident management.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 1)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day1/</link><pubDate>Thu, 09 Apr 2026 21:07:34 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day1/</guid><description>&lt;h1 id="google-cloud-fundamentals-core-infrastructure-day-1"&gt;
  Google Cloud Fundamentals: Core Infrastructure (Day 1)
  &lt;a class="heading-link" href="#google-cloud-fundamentals-core-infrastructure-day-1"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
