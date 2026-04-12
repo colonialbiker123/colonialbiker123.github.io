@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sumukh Kesarla</title><link>https://colonialbiker123.github.io/</link><description>Recent content on Sumukh Kesarla</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 11 Apr 2026 13:03:05 +0530</lastBuildDate><atom:link href="https://colonialbiker123.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 3)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day3/</link><pubDate>Sat, 11 Apr 2026 13:03:05 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day3/</guid><description>&lt;h1 id="virtual-private-cloud-networking"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sumukh Kesarla</title><link>https://colonialbiker123.github.io/</link><description>Recent content on Sumukh Kesarla</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 12 Apr 2026 20:51:53 +0530</lastBuildDate><atom:link href="https://colonialbiker123.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 4)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day4/</link><pubDate>Sun, 12 Apr 2026 20:51:53 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day4/</guid><description>&lt;h1 id="connecting-networks-to-google-vpc"&gt;
+ Connecting Networks to Google VPC
+ &lt;a class="heading-link" href="#connecting-networks-to-google-vpc"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Many Google Cloud customers want to connect their Google Virtual Private Cloud networks to other networks in their system, such as on-premises networks or networks in other clouds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Virtual Private Network connection: over the internet and use Cloud VPN to create a “tunnel” connection. To make the connection dynamic, a Google Cloud feature called Cloud Router can be used.&lt;/li&gt;
+&lt;li&gt;“peering” with Google using Direct Peering: Peering means putting a router in the same public data center as a Google point of presence and using it to exchange traffic between networks.&lt;/li&gt;
+&lt;li&gt;Carrier Peering: Carrier Peering gives you direct access from your on-premises network through a service provider&amp;rsquo;s network to Google Workspace and to Google Cloud products that can be exposed through one or more public IP addresses.&lt;/li&gt;
+&lt;li&gt;Dedicated Interconnect: If getting the highest uptimes for interconnection is important. If these connections have topologies that meet Google’s specifications, they can also be covered by an SLA of up to 99.99%. Also, these connections can be backed up by a VPN.&lt;/li&gt;
+&lt;li&gt;Partner Interconnect: which provides connectivity between an on-premises network and a VPC network through a supported service provider.&lt;/li&gt;
+&lt;li&gt;Cross-Cloud Interconnect: Cross-Cloud Interconnect helps you establish high-bandwidth dedicated connectivity between Google Cloud and another cloud service provider. Google provisions a dedicated physical connection between the Google network and that of another cloud service provider. Cross-Cloud Interconnect supports your adoption of an integrated multicloud strategy. Cross-Cloud Interconnect offers reduced complexity, site-to-site data transfer, and encryption.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="google-cloud-storage-options"&gt;
+ Google Cloud Storage options
+ &lt;a class="heading-link" href="#google-cloud-storage-options"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Google Cloud has storage options for structured, unstructured, transactional, and relational data.&lt;/li&gt;
+&lt;li&gt;Google Cloud’s five core storage products: Cloud Storage, Cloud SQL, Spanner, Firestore, and Bigtable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="cloud-storage"&gt;
+ Cloud Storage:
+ &lt;a class="heading-link" href="#cloud-storage"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Object Storage: Object storage is a computer data storage architecture that manages data as “objects” and not as a file and folder hierarchy (file storage), or as chunks of a disk (block storage).&lt;/li&gt;
+&lt;li&gt;These objects are stored in a packaged format which contains the binary form of the actual data itself, as well as relevant associated meta-data (such as date created, author, resource type, and permissions), and a globally unique identifier.&lt;/li&gt;
+&lt;li&gt;These unique keys are in the form of URLs, which means object storage interacts well with web technologies.&lt;/li&gt;
+&lt;li&gt;Data commonly stored as objects include video, pictures, and audio recordings.&lt;/li&gt;
+&lt;li&gt;Cloud Storage’s primary use is whenever binary large-object storage (also known as a “BLOB”) is needed for online content such as videos and photos, for backup and archived data and for storage of intermediate results in processing workflows.&lt;/li&gt;
+&lt;li&gt;Cloud Storage files are organized into buckets. A bucket needs a globally unique name and a specific geographic location for where it should be stored, and an ideal location for a bucket is where latency is minimized.&lt;/li&gt;
+&lt;li&gt;The storage objects offered by Cloud Storage are immutable, which means that you do not edit them, but instead a new version is created with every change made.&lt;/li&gt;
+&lt;li&gt;Administrators have the option to either allow each new version to completely overwrite the older one, or to keep track of each change made to a particular object by enabling “versioning” within a bucket.&lt;/li&gt;
+&lt;li&gt;With object versioning enabled, you can list the archived versions of an object, restore an object to an older state, or permanently delete a version of an object, as needed.&lt;/li&gt;
+&lt;li&gt;Using IAM roles and, where needed, access control lists (ACLs), organizations can conform to security best practices, which require each user to have access and permissions to only the resources they need to do their jobs, and no more than that.&lt;/li&gt;
+&lt;li&gt;Each access control list consists of two pieces of information. The first is a scope, which defines who can access and perform an action. The second is a permission, which defines what actions can be performed, like read or write.&lt;/li&gt;
+&lt;li&gt;Cloud Storage also offers lifecycle management policies. For example, you could tell Cloud Storage to delete objects older than 365 days; or to delete objects created before January&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Google Cloud Fundamentals: Core Infrastructure (Day 3)</title><link>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day3/</link><pubDate>Sat, 11 Apr 2026 13:03:05 +0530</pubDate><guid>https://colonialbiker123.github.io/posts/google-cloud-fundamentals-day3/</guid><description>&lt;h1 id="virtual-private-cloud-networking"&gt;
  Virtual Private Cloud Networking
  &lt;a class="heading-link" href="#virtual-private-cloud-networking"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
